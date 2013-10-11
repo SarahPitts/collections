@@ -19,3 +19,8 @@ collection = [126, 516, 846, 491, 774, 824, 640, 913, 276, 309, 127, 175, 471, 2
  square_collection = collection.collect {|item| item*item }
  puts "Square Collection"
  puts square_collection.join(', ')
+
+ puts "Determine if there is a number evenly divisible by 31"
+ thirtyone_collection = collection.select {|item| item%31 ==0 }
+ puts "Evenly divisible by 31 Collection"
+ puts thirtyone_collection.join(', ')
