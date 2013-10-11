@@ -29,3 +29,7 @@ collection = [126, 516, 846, 491, 774, 824, 640, 913, 276, 309, 127, 175, 471, 2
  split_collection = collection.partition {|item| item <= 500 }
  puts "Split Collection at 500"
  puts split_collection.join(', ')
+
+ puts "Print them in ascending order with a place marker"
+ sort_collection = collection.sort
+ marker_collection = sort_collection.each_with_index {|item, i| puts [i, item].join(". ")}
