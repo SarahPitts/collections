@@ -24,3 +24,8 @@ collection = [126, 516, 846, 491, 774, 824, 640, 913, 276, 309, 127, 175, 471, 2
  thirtyone_collection = collection.select {|item| item%31 ==0 }
  puts "Evenly divisible by 31 Collection"
  puts thirtyone_collection.join(', ')
+
+ puts "Split the numbers into two sets: ones below 500 and ones above"
+ split_collection = collection.partition {|item| item <= 500 }
+ puts "Split Collection at 500"
+ puts split_collection.join(', ')
