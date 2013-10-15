@@ -33,3 +33,11 @@ collection = [126, 516, 846, 491, 774, 824, 640, 913, 276, 309, 127, 175, 471, 2
  puts "Print them in ascending order with a place marker"
  sort_collection = collection.sort
  marker_collection = sort_collection.each_with_index {|item, i| puts [i, item].join(". ")}
+
+ puts "Find the sum of all numbers between 600 and 700"
+ between_collection = collection.select {|item| item >= 600 && item <= 700 }
+ sum_collection = between_collection.inject(0) {|sum, i| sum + i}
+ puts "All numbers between 600 and 700"
+ puts between_collection.join(', ')
+ puts "Sum of all numbers between 600 and 700"
+ puts sum_collection
