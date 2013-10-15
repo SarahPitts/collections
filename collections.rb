@@ -41,3 +41,46 @@ collection = [126, 516, 846, 491, 774, 824, 640, 913, 276, 309, 127, 175, 471, 2
  puts between_collection.join(', ')
  puts "Sum of all numbers between 600 and 700"
  puts sum_collection
+
+
+
+ puts "Create groups by hundreds (100s, 200s, 300s), where each set is sorted in increasing order"
+ one_collection = collection.select {|item| item >= 0 && item <= 100 }
+ puts "All numbers between 0 and 100"
+ puts one_collection.sort.join(', ')
+
+ two_collection = collection.select {|item| item >= 100 && item <= 200 }
+ puts "All numbers between 100 and 200"
+ puts two_collection.sort.join(', ')
+
+ three_collection = collection.select {|item| item >= 200 && item <= 300 }
+ puts "All numbers between 200 and 300"
+ puts three_collection.sort.join(', ')
+
+ four_collection = collection.select {|item| item >= 300 && item <= 400 }
+ puts "All numbers between 300 and 400"
+ puts four_collection.sort.join(', ')
+
+ five_collection = collection.select {|item| item >= 400 && item <= 500 }
+ puts "All numbers between 400 and 500"
+ puts five_collection.sort.join(', ')
+
+ six_collection = collection.select {|item| item >= 500 && item <= 600 }
+ puts "All numbers between 500 and 600"
+ puts six_collection.sort.join(', ')
+
+ seven_collection = collection.select {|item| item >= 600 && item <= 700 }
+ puts "All numbers between 600 and 700"
+ puts seven_collection.sort.join(', ')
+
+ eight_collection = collection.select {|item| item >= 700 && item <= 800 }
+ puts "All numbers between 700 and 800"
+ puts eight_collection.sort.join(', ')
+
+ nine_collection = collection.select {|item| item >= 800 && item <= 900 }
+ puts "All numbers between 800 and 900"
+ puts nine_collection.sort.join(', ')
+
+ ten_collection = collection.select {|item| item >= 900 && item <= 1000 }
+ puts "All numbers between 900 and 1000"
+ puts ten_collection.sort.join(', ')
