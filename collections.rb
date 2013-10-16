@@ -84,3 +84,9 @@ collection = [126, 516, 846, 491, 774, 824, 640, 913, 276, 309, 127, 175, 471, 2
  ten_collection = collection.select {|item| item >= 900 && item <= 1000 }
  puts "All numbers between 900 and 1000"
  puts ten_collection.sort.join(', ')
+
+
+
+ puts "Exercise 8 - Find all numbers which have the digit 6"
+ select_collection = collection.find_all { |number| number.to_s.include? ("6")}
+ puts select_collection.join(', ')
